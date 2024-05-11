@@ -1,0 +1,21 @@
+Promotion:
+
+ចាប់ពីថ្ងៃទី១០ដល់ទី១២ខែឧសភា ចុះឈ្មោះសិក្សាសន្សំសំចៃបាន៥០%។ 
+
+តម្លៃសិក្សា៖
+1-Java Basic: ៣០ម៉ឺនរៀល
+2-Java Advance: ២០ម៉ឺនរៀល
+3-Spring Boot: ៣០ម៉ឺនរៀល
+4-Microservices Level 1: ៥០ម៉ឺនរៀល
+5-Microservices Level 2: ៥០ម៉ឺនរៀល
+6-Java Reactive: ៥០ម៉ឺនរៀល
+7-Angular: ៥០ម៉ឺនរៀល
+តម្លៃក្នុងពេល Promotion៖
+1-Java Basic
+2-Java Advance 
+3-Spring Boot 
+៣វគ្គខាងលើ ត្រឹម៤០ម៉ឺនរៀល
+4-Microservices Level 1: ២៥ម៉ឺនរៀល
+5-Microservices Level 2: ២៥ម៉ឺនរៀល
+6-Java Reactive: ២៥ម៉ឺនរៀល
+7-Angular: ២៥ម៉ឺនរៀល

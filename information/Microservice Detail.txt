@@ -1,0 +1,200 @@
+  · 
+Microservices ដោយប្រើ  Springboot
+---------- Level 1 -------------- 
+𝗔. 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻
+1. Microservices Architecture
+2. Spring Cloud for Microservices
+𝗕. 𝗦𝗶𝘇𝗶𝗻𝗴 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀
+1. Approaches to identify boundaries & right sizing for building microservices
+2. Sizing & identifying boundaries with a Bank App use case
+𝗖. 𝗖𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝘂𝘀𝗶𝗻𝗴 𝗦𝗽𝗿𝗶𝗻𝗴 𝗕𝗼𝗼𝘁
+1. Bank Accounts Microservices
+2. Bank Loans Microservices
+3. Bank Cards Microservices
+𝗗. 𝗕𝘂𝗶𝗹𝗱, 𝗱𝗲𝗽𝗹𝗼𝘆, 𝘀𝗰𝗮𝗹𝗲 𝗼𝘂𝗿 𝗺𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝘂𝘀𝗶𝗻𝗴 𝗗𝗼𝗰𝗸𝗲𝗿
+1. Introduction to challenges while building, deploying microservices
+2. What is Containerization technology?
+3. Definition of containers
+4. Introduction to Docker & its architecture
+5. Understanding Docker Hub & Installing Docker
+6. Creating Docker image definition using a Dockerfile
+7. Create Accounts microservice Docker image from the Dockerfile
+8. Start and deploy Accounts microservice using Docker image & containers
+9. Deep dive of important Docker commands
+10. Introduction to Buildpacks
+11. Creating docker image of Loans microservice using Buildpacks
+12. Pushing Docker images from your local to remote Docker hub repository
+13. Deep dive on docker-compose
+𝗘. 𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻𝘀 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗶𝗻 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀
+1. Introduction to Configurations Management challenges inside microservices
+2. Configuration Management architecture inside microservices
+3. Deep dive of Spring Cloud Config for Configuration management
+4. Building Config Server service and load all the configurations from classpath
+5. Reading configurations from a file system location
+6. Reading configurations from a GitHub repository
+7. Updating Accounts Microservice to read properties from Config Server
+8. Updating Loans Microservice to read properties from Config Server
+9. Updating Cards Microservice to read properties from Config Server
+10 Generating Docker images after Config Server changes
+11. Pushing all the latest Docker images with Config server changes to DockerHub
+12. Updating Docker Compose file to adapt Config Server changes
+13. Starting all the microservices using docker compose files based on the env
+14. Refreshing properties with @RefreshScope
+15. Encryption & Decryption of your properties inside Config server
+𝗙. 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆 & 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻
+1. Introduction to the Service Discovery & Registration inside microservices
+2. Why not traditional load balancers for Microservices
+3. Architecture of Service Discovery inside microservices
+4. Client-Side load balancing between microservices
+5. Spring Cloud support for Service Discovery & Registration
+6. Setup Service Discovery agent using Eureka server
+7. Make changes for Accounts microservice to connect Eureka Server
+8. Make changes for Loans & Cards microservice to connect Eureka Server
+9. Deregistration from Eureka server when microservices shutdown
+10. Demo of heartbeats mechanism to Eureka server from clients
+11. Feign Client to invoke other microservices
+12. Generating Docker images after Service Discovery changes
+13. Pushing all the latest Docker images with Eureka changes to Docker Hub
+14. Updating Docker Compose file to adapt Service Discovery changes
+15. Starting all the microservices using docker compose file
+16. Running docker compose with 2 instances of Accounts microservice
+17. Eureka Self-Preservation mode to avoid network trap issues
+𝗚. 𝗠𝗮𝗸𝗶𝗻𝗴 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗥𝗲𝘀𝗶𝗹𝗶𝗲𝗻𝘁
+1. Introduction to the need of Resiliency inside microservices
+2. Typical use case or scenario for the need of Resiliency
+3. Deep dive on Circuit Breaker pattern in microservices
+4. Implementing Circuit Breaker pattern
+5. Deep dive on Retry pattern in microservices
+6. Implementing Retry Pattern in microservices
+7. Deep dive on Rate Limiter pattern in microservices
+8. Implementing Rate Limiter Pattern in microservices
+9. Deep dive on Bulk head pattern in microservices
+𝗛. 𝗛𝗮𝗻𝗱𝗹𝗶𝗻𝗴 𝗥𝗼𝘂𝘁𝗶𝗻𝗴 & 𝗖𝗿𝗼𝘀𝘀 𝗰𝘂𝘁𝘁𝗶𝗻𝗴 𝗰𝗼𝗻𝗰𝗲𝗿𝗻𝘀 𝗶𝗻 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀
+1. Introduction to the challenges with Routing & Cross cutting concerns
+2. Introduction to Spring Cloud Gateway
+3. Deep dive on Spring Cloud Gateway internal architecture
+4. Building Spring Cloud Gateway service
+5. Implementing Custom Routing using Spring Cloud Gateway
+6. Implementing Cross cutting concern Tracing & Logging using Gateway Server
+7. Generating and pushing Docker images with Spring Cloud Gateway changes
+8. Updating Docker Compose file to adapt Spring Cloud Gateway changes
+𝗜. 𝗗𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲𝗱 𝘁𝗿𝗮𝗰𝗶𝗻𝗴 & 𝗟𝗼𝗴 𝗮𝗴𝗴𝗿𝗲𝗴𝗮𝘁𝗶𝗼𝗻 𝗶𝗻 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀
+1. Introduction to the challenges related to Distributed tracing & Log aggregation
+2. Introduction to Spring Cloud Sleuth & Zipkin
+3. Deep dive on Spring Cloud Sleuth & it's tracing format
+4. Deep dive on Zipkin internal architecture
+5. Implementing Distributed tracing with Spring Cloud Sleuth
+6. Implementing Log aggregation with Zipkin Server
+7. Pushing Sleuth message into RabbitMQ
+8. Generate, Push Docker images with Sleuth & Zipkin changes
+---------- Level 2 --------------
+𝗝. 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗠𝗲𝘁𝗿𝗶𝗰𝘀 & 𝗛𝗲𝗮𝗹𝘁𝗵
+1. Introduction to the challenges related to monitoring microservices
+2. Different approaches to monitor microservices
+3. Setup of micrometer inside microservices
+4. Setup of Prometheus to monitor microservices
+5. Setup of Grafana to monitor microservices with inbuilt dashboards
+6. Building custom dashboards inside Grafana
+7. Sending alerts using Grafana when service is down
+𝗞: 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆
+1. Introduction to Microservices Security
+2. Problems that OAuth2 solves
+3. Introduction to OAuth2
+4. OAuth2 jargons or terminologies or roles
+5. What is OpenID Connect & why it is important
+6. Introduction to IAM products & why KeyCloak
+7. Deep dive of Client Credentials grant type flow
+8. Securing Gateway server using Client Credentials grant type flow - Theory
+9. Setup Auth server using KeyCloak
+10. Register client details inside KeyCloak for Client credentials grant flow
+11. Getting Access token from Auth Server in Client credentials grant flow
+12. Securing Gateway server as a Resource server
+13. Implement Authorization inside Gateway server using Roles
+14. Deep dive of Authorization Code grant type flow
+15. Securing Gateway server using Authorization Code grant type flow - Theory
+16. Register client & end user inside KeyCloak for Authorization code grant flow
+17. Demo of Authorization code grant type flow
+18. Demo of Microservices Security using Docker containers & Docker compose
+𝗟: 𝗘𝘃𝗲𝗻𝘁 𝗗𝗿𝗶𝘃𝗲𝗻 𝗺𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝘂𝘀𝗶𝗻𝗴 𝗥𝗮𝗯𝗯𝗶𝘁𝗠𝗤,𝗦𝗽𝗿𝗶𝗻𝗴 𝗖𝗹𝗼𝘂𝗱 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 & 𝗦𝘁𝗿𝗲𝗮𝗺
+1. Introduction to Event-driven microservices
+2. Introduction to Event-driven models
+3. What we are going to build using a pub sub model
+4. Introduction to RabbitMQ
+5. Why to use Spring Cloud Function
+6. Develop message microservice using Spring Cloud Functions
+7. Why to use Spring Cloud Stream
+8. Update message & accounts microservices to stream & process the events
+9. Demo of Async communication or event streaming using Rabbit MQ
+10. Demo of Async comm or event streaming using Docker containers & Docker compose
+𝗠: 𝗘𝘃𝗲𝗻𝘁 𝗗𝗿𝗶𝘃𝗲𝗻 𝗺𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝘂𝘀𝗶𝗻𝗴 𝗞𝗮𝗳𝗸𝗮, 𝗦𝗽𝗿𝗶𝗻𝗴 𝗖𝗹𝗼𝘂𝗱 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 & 𝗦𝘁𝗿𝗲𝗮𝗺
+1. Apache Kafka Vs RabbitMQ
+2. Introduction to Apache Kafka
+3. Producer and Consumer side stories
+4. Installation of Apache Kafka
+5. Implement & Demo of Async communication or event streaming using Kafka
+6. Demo of Async comm or event streaming using Docker containers & Docker Compose
+𝗡: 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗢𝗿𝗰𝗵𝗲𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝘂𝘀𝗶𝗻𝗴 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀
+1. Introduction to the challenges related to container orchestration
+2. Introduction to Kubernetes
+3. Deep dive on Kubernetes internal architecture
+4. Setup a local Kubernetes cluster using Docker Desktop
+5. Deploying the Kubernetes Dashboard UI
+6. Deep dive on Kubernetes YAML configurations to deploy a microservice
+7. Deploying ConfigServer into Kubernetes Cluster
+8. Create environment variables inside Kubernetes Cluster using ConfigMap
+9. Preparing Kubernetes manifest files for remaining microservices
+10. Deploying remaining microservices into Kubernetes Cluster
+11. Automatic Self healing inside Kubernetes cluster
+12. Automatic Rollout & Rollback inside Kubernetes cluster
+13. Introduction to Kubernetes Service types
+14. Demo of Kubernetes Service types
+15. Problems with manually created Kubernetes manifest files
+𝗢: 𝗗𝗲𝗲𝗽 𝗱𝗶𝘃𝗲 𝗼𝗻 𝗛𝗲𝗹𝗺
+1. Introduction to Helm & the problems that it solves
+2. Installing Helm
+3. Installing a sample Helm Chart
+4. Understanding Helm Chart structure
+5. Creating our own Helm chart & template files
+6. Creating Helm chart for Accounts microservice
+7. Creating Helm charts for other microservices
+8. Creating Helm charts for Dev, QA and Prod environment
+9. Demo of helm template command
+10. Install KeyCloak in Kubernetes Cluster using Helm Chart
+11. Install Kafka in Kubernetes Cluster using Helm Chart
+12. Install Prometheus in Kubernetes Cluster using Helm Chart
+13. Install Grafana Loki & Tempo in Kubernetes Cluster using Helm Chart
+14. Install Grafana in Kubernetes Cluster using Helm Chart
+15. Install microservices in Kubernetes Cluster using Helm Chart
+16. Demo of helm upgrade command
+17. Demo of helm history and rollback commands
+18. Demo of helm uninstall command
+19. Quick revision of important helm commands
+𝗣: 𝗦𝗲𝗿𝘃𝗲𝗿-𝘀𝗶𝗱𝗲 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗱𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆 𝗮𝗻𝗱 𝗹𝗼𝗮𝗱 𝗯𝗮𝗹𝗮𝗻𝗰𝗶𝗻𝗴 𝘂𝘀𝗶𝗻𝗴 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀
+1. Introduction to Server-side service discovery and load balancing
+2. How to setup discovery server in K8s cluster using spring cloud kubernetes
+3. Install spring cloud kubernetes discovery server in K8s cluster
+4. Making Kubernetes Discovery Client changes in microservices
+5. Updating Helm charts for Kubernetes Discovery Server changes
+6. Demo of Server-side service discovery and load balancing
+𝗤: 𝗗𝗲𝗽𝗹𝗼𝘆𝗶𝗻𝗴 𝗺𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗶𝗻𝘁𝗼 𝗰𝗹𝗼𝘂𝗱 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗰𝗹𝘂𝘀𝘁𝗲𝗿
+1. Kubernetes support by Cloud providers
+2. Set up Google Cloud account & install Google Cloud SDK
+3. Create a Kubernetes cluster in Google Cloud
+4. Installing all our microservices and supporting components in Google Cloud K8sbv
+5. Demo of PisethBank microservices using Google Cloud Kubernetes Cluster
+6. Validate Grafana components in Google Cloud Kubernetes Cluster
+7. Deleting the Google Cloud Kubernetes Cluster
+𝗥: 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗜𝗻𝗴𝗿𝗲𝘀𝘀, 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗠𝗲𝘀𝗵 (𝗜𝘀𝘁𝗶𝗼) & 𝗺𝗧𝗟𝗦
+1. Quick introduction to Kubernetes Ingress
+2. Deep dive on Kubernetes Ingress & Ingress Controller
+3. Benefits of Kubernetes Ingress & the kind of traffic it handles
+4. Introduction to Service Mesh & it's capabilities
+5. Introduction to Service mesh components
+6. Introduction to mTLS & deep dive on how TLS works
+7. How does mTLS works
+- - - - - - - - - - -
+ចូលរៀនបានជារៀងរាល់ថ្ងៃ
+តម្លៃសិក្សា៖
+Level 1: A->I: ៥០ម៉ឺនរៀល
+Level 2: J->R:​ ៥០ម៉ឺនរៀល
+សិស្សអាចបង់២ដងបាន។ បើបង់ផ្តាច់មុនថ្ងៃទី២៥មេសា ឆ្នាំ២០២៤ សិស្សបង់តែ ៦០ម៉ឺនរៀល។
