@@ -1,0 +1,74 @@
+- website content 
+
+1. Course outline 
+2. Login user can check the detail in the course and time fram 
+3. See the promotion 
+
+BE:
+
+1. CRUD : category, course, promotion, user, take noted 
+2. Register (can register multiple courses)
+3. Register with promotion 
+4. Paymenet (one time or term)
+5. Online popup notification 
+
+* Criterial:
+- Logic Accuracy
+- Exceptoin handling 
+- Unit Test with code coverage 90% up 
+
+* Technology;
+- Java 17 Up
+- Spring Boot 3 
+- Maven 
+
+--------------------------------------------------
+11 May 2024 
+
+How to start : 
+
+- Branstorm (google, templet) 
+- Sample from take note 
+- Bing research 
+- Front End with React
+- Project code control: git hub 
+- testing (aws) 
+- Personal background of the instructor : Mr. Piseth in (FE)
+- Form Register Date 
+- Get information from Friend, telegram, FB reference link 
+- email confirm after register 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
