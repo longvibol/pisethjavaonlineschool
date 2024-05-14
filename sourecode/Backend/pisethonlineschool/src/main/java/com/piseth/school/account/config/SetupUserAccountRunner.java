@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.piseth.school.account.entity.userAccount;
+import com.piseth.school.account.entity.userInfo;
 import com.piseth.school.account.entity.course;
 import com.piseth.school.account.repository.UserAccountRepository;
 import com.piseth.school.account.repository.categoryRepository;
@@ -34,7 +34,7 @@ public class SetupUserAccountRunner implements CommandLineRunner{
 		
 		customerRepository.save(customer);
 		
-		userAccount account = new userAccount();
+		userInfo account = new userInfo();
 		account.setAccountNumber(1L);
 		account.setAccountType("Saving");
 		account.setBranchAddress("Phnom Penh");

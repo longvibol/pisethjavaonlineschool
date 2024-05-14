@@ -1,6 +1,8 @@
 package com.piseth.school.account.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,16 +15,10 @@ import lombok.Data;
 @Entity
 @Data
 public class category {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long accountNumber;
-	@ManyToOne
-	@JoinColumn(name = "customerId")
-	private course customer;
-	private String accountType;
-	private String branchAddress;
-	private LocalDate createDate;
-	}
 
+	private Long categoryId;
+	private List<String> categoryList;
+	private LocalDateTime proposeDate;
+}
 
+//categoryList : studentRequest, project, homework, research, Q&S  

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.piseth.school.account.dto.AccountDTO;
-import com.piseth.school.account.entity.userAccount;
+import com.piseth.school.account.entity.userInfo;
 import com.piseth.school.account.mapper.UserAccountMapper;
 import com.piseth.school.account.service.userAccountService;
 
@@ -27,7 +27,7 @@ public class InformationController {
 	@PostMapping
 	public ResponseEntity<?> saveAccount(@RequestBody AccountDTO dto) {
 
-		userAccount account = accountMapper.toAccount(dto);
+		userInfo account = accountMapper.toAccount(dto);
 
 		account = accountService.save(account);
 		return ResponseEntity.ok(account);

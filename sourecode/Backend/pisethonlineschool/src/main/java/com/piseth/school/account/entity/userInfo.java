@@ -1,6 +1,7 @@
 package com.piseth.school.account.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.springframework.boot.actuate.endpoint.web.Link;
 
@@ -14,18 +15,23 @@ import lombok.Data;
 
 @Entity
 @Data
-public class userAccount {
-	
+public class userInfo {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long accountId;
 	private Long userId;
-	private String userName;
-	private String userPassword;
-	private String personalEmail;
-	private Long paymentTerm;
-	private LocalDate createDate;
-	}
+	private Long promotionId;
+	private LocalDate registerDate;
+	private List<String> courseRegister;
+	private List<String> compeleteCourse;
+	private List<String> Course;
+	private Link telegramName;
+	private String occupation;
+	private LocalDate dateOfBirth;
+	private String addressInfo;
+	private String emailInfo;
+
+}
 
 //Java basic + Java advance + spring boot Registration
 //Name: Nhoem Ponleu 
@@ -35,5 +41,3 @@ public class userAccount {
 //Province of birth:Takeo 
 //Course fee: 112.5$
 //Personal Email: ponleun@gmail.com
-
-

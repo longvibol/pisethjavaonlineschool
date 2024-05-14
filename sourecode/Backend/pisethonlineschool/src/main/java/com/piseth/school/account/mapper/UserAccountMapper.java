@@ -3,14 +3,14 @@ package com.piseth.school.account.mapper;
 import org.springframework.stereotype.Component;
 
 import com.piseth.school.account.dto.AccountDTO;
-import com.piseth.school.account.entity.userAccount;
+import com.piseth.school.account.entity.userInfo;
 
 @Component
 public class UserAccountMapper {
 
-	public userAccount toAccount(AccountDTO dto) {
+	public userInfo toAccount(AccountDTO dto) {
 
-		userAccount account = new userAccount();
+		userInfo account = new userInfo();
 		account.setAccountNumber(dto.getAccountNumber());
 		account.setAccountType(dto.getAccountType());
 		account.setBranchAddress(dto.getBranchAddress());
